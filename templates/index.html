@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>flask testing template</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    </head>
+    <body>
+        <div class="bod">
+        <h1>❣ Flask Template for Begginers ❣</h1>
+        <form action="{{ url_for('testing') }}" method="post">
+            <select name="options" id="">
+                <option value="jai Bhim"> Bhima Army</option>
+                <option value="jai BajrangBali"> Bajrang Dal</option>
+                <option value="jai Hind"> India Army</option>
+
+            </select>
+            <input type="text" name="user_name" placeholder="type your name" required="required">
+            <input type="password" name="password" placeholder="set your password" required="required">
+            <input type="text" name="secret_code" placeholder="add scret key" required="required">
+            <button  type="submit"> click me</button>
+            <h2>WELCOME TO YOU  :- {{ user_details }}</h2>
+            <!-- {{ detail_list }} -->
+            <h3>Returning list element throught the For loop</h3>
+            {% for item in detail_list  %}
+
+            <p>{{ item }}</p>
+            
+            {% endfor %}
+        </form></div>
+    </body>
+</html>
