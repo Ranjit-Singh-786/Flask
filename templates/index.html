@@ -1,30 +1,19 @@
-<html>
-    <head>
-        <title>flask testing template</title>
-        <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
-    </head>
-    <body>
-        <div class="bod">
-        <h1>❣ Flask Template for Begginers ❣</h1>
-        <form action="{{ url_for('testing') }}" method="post">
-            <select name="options" id="">
-                <option value="jai Bhim"> Bhima Army</option>
-                <option value="jai BajrangBali"> Bajrang Dal</option>
-                <option value="jai Hind"> India Army</option>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>welcome at home page</h2>
+    <br><br><br><br><br><br><br><br>
+    <h3>But has route path as link</h3>
+    <p>when you will clik on these button you will redirect on different route.</p>
+    <a href="http://127.0.0.1:5000/about">Go on about</a><br>
+    <a href="http://127.0.0.1:5000/contact">Go on contact</a><br>
+    <a href="http://127.0.0.1:5000/course">Go on course</a><br>
+    <a href="http://127.0.0.1:5000/service">Go on service</a><br>
 
-            </select>
-            <input type="text" name="user_name" placeholder="type your name" required="required">
-            <input type="password" name="password" placeholder="set your password" required="required">
-            <input type="text" name="secret_code" placeholder="add scret key" required="required">
-            <button  type="submit"> click me</button>
-            <h2>WELCOME TO YOU  :- {{ user_details }}</h2>
-            <!-- {{ detail_list }} -->
-            <h3>Returning list element throught the For loop</h3>
-            {% for item in detail_list  %}
-
-            <p>{{ item }}</p>
-            
-            {% endfor %}
-        </form></div>
-    </body>
+</body>
 </html>
