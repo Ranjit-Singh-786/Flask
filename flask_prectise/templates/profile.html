@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <h2>Welcome in your profile</h2>
+    <!-- jinja2template -->
+    <p><b>Username :  {{ name }}</b></p> <br>  
+    <p><b>Useremail :  {{ email }}</b></p> <br>
+    <p><b>Userpassword :  {{ password }}</b></p> <br>
+    <a href="{{ url_for('signout', username=name, email=email) }}"><button>Logout</button></a>
+
+    
+
+
+</body>
+</html>
