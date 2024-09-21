@@ -50,11 +50,13 @@ def profile(username,email,password):
 
     return render_template('profile.html',name=username,email=email,password=password)
 
+#logout 
+
 
 @app.route('/signout/<username>/<email>') 
 def signout(username,email):
-    # return f"hey i sign out {username} and {email}" 
-    return render_template('signout.html',name=username,email=email )
+    return f"hey i sign out {username} and {email}" 
+    # return render_template('signout.html',name=username,email=email )
 
 
 
